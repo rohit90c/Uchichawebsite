@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">Uchicha- The Power of Sharingan</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="https://pbs.twimg.com/media/FgzVMNrWIAAUOPA?format=jpg&name=large" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Sasuke Uchiha</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi sapiente facilis cum
+                        quas repellat minima, earum exercitationem labore consequuntur eos ipsum perspiciatis veritatis
+                        saepe temporibus deserunt! Autem, ab voluptatum?</p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#" class="icon"> <i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"> <i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"> <i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"> <i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Lorem Ipsum</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="https://i.pinimg.com/564x/08/87/bb/0887bb9dae29db6452bc41650406c120.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Itachi Uchicha</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil odio facere magni fuga
+                        illo nesciunt perspiciatis architecto, perferendis aut voluptate molestias possimus rerum
+                        doloribus itaque qui voluptatum magnam iure!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">
+                Obito Uchicha
+            </h3>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                </div>
+                <div class="image">
+                    <img src="https://wallpaperforu.com/wp-content/uploads/2021/11/Wallpaper-Anime-Naruto-Obito-Uchiha-1920x1384p18.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title,.section-title', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.sec-01, .image', { delay: 600, origin: 'lbottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image .sec-03 .image', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+</body>
+
+</html>
